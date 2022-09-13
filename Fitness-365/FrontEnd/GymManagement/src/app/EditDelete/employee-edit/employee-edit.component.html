@@ -1,0 +1,63 @@
+<div class="EmployeeEdit">
+    <header class="header">
+        Employee Edit
+    </header>
+    <form class="form" [formGroup]="EmployeeForm">
+
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>{{data.Columns[0]}}</mat-label>
+            <input matInput formControlName="employeeId" id="employeeId">
+        </mat-form-field>
+
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>Enter {{data.Columns[1]}}</mat-label>
+            <input matInput formControlName="employeeName" id="employeeName" required>
+        </mat-form-field>
+
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>Enter {{data.Columns[2]}}</mat-label>
+            <input matInput formControlName="employeeImage" id="employeeImage" required>
+        </mat-form-field>
+
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>Select {{data.Columns[3]}}</mat-label>
+            <mat-select [(value)]="TypeSelected">
+                <mat-option  *ngFor="let type of empType" [value]="type">
+                    {{type}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>Select {{data.Columns[4]}}</mat-label>
+            <mat-select [(value)]="genderSelected">
+                <mat-option *ngFor="let type of Gender" [value]="type">
+                    {{type}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>Enter {{data.Columns[5]}}</mat-label>
+            <input matInput formControlName="address" id="address" required>
+        </mat-form-field>
+
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>Enter {{data.Columns[6]}}</mat-label>
+            <input matInput formControlName="phoneNo" id="phoneNo" required>
+        </mat-form-field>
+
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>Is {{data.Columns[7]}}</mat-label>
+            <mat-select [(value)]="activeSelected">
+                <mat-option *ngFor="let type of Active" [value]="type">
+                    {{type}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+    </form>
+
+    <button mat-raised-button class="formButton" (click)="edit()" color="primary">Edit</button>
+
+</div>

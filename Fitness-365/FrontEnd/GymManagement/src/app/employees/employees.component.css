@@ -1,0 +1,42 @@
+.Container{
+    position: relative;
+
+}
+.table{
+    line-height: 2;
+}
+.table tr{
+    text-align: center;
+    font-size: 1rem;
+}
+.table tr th{
+    background-color: #0047AB;
+    color: white;
+    border-bottom: 1px solid #ddd;
+}
+.table tr td{
+    text-transform: capitalize;
+    border-bottom: 1px solid #ddd;
+}
+.Icon{
+    display: inline-block;
+    position: relative;
+    height: 50%;
+    width: 50%;
+    border-radius: 10%;
+    cursor: pointer;
+}
+.Icon:hover{
+    color: white;
+}
+#Edit:hover{
+    background-color: rgb(68, 68, 241);
+}
+#Delete:hover{
+    background-color: rgb(243, 76, 76);
+}
+.button{
+    float: right;
+    margin: 2px;
+    margin-right: 10px;
+}

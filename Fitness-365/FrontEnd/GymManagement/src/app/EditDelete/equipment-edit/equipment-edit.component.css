@@ -1,0 +1,24 @@
+.header {
+    text-align: center;
+    font: 1.5rem sans-serif;
+}
+
+.form {
+    margin: 5%;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 40% 40%;
+}
+
+.formButton {
+    float:right;
+}
+
+.toggleButton{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}

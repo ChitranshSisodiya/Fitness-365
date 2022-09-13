@@ -1,0 +1,15 @@
+.header {
+    text-align: center;
+    font: 1.5rem sans-serif;
+}
+
+.form {
+    margin: 5%;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 40% 40%;
+}
+
+.formButton {
+    float:right;
+}

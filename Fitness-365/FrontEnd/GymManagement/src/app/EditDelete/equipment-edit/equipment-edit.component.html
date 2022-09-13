@@ -1,0 +1,46 @@
+<div class="EquipmentEdit">
+    <header class="header">
+        Equipment Edit
+    </header>
+    <form class="form" [formGroup]="EquipmentForm">
+
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>{{data.Columns[0]}}</mat-label>
+            <input matInput formControlName="equipmentId" id="equipmentId">
+        </mat-form-field>
+
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>Enter {{data.Columns[1]}}</mat-label>
+            <input matInput formControlName="equipmentName" id="equipmentName" required>
+        </mat-form-field>
+
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>Enter {{data.Columns[2]}}</mat-label>
+            <input matInput formControlName="equipmentDetail" id="equipmentDetail" required>
+        </mat-form-field>
+
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>Enter {{data.Columns[3]}}</mat-label>
+            <input matInput formControlName="quantity" id="quantity" required>
+        </mat-form-field>
+
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>Select {{data.Columns[4]}}</mat-label>
+            <mat-select [(value)]="equipSelected">
+                <mat-option *ngFor="let type of equipType" [value]="type">
+                    {{type}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>Enter {{data.Columns[5]}}</mat-label>
+            <input matInput formControlName="equipmentImage" id="equipmentImage" required>
+        </mat-form-field>
+
+    </form>
+
+    <button mat-raised-button class="formButton" (click)="edit()" color="primary">Edit</button>
+
+</div>

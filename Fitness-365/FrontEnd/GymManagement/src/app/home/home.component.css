@@ -1,0 +1,149 @@
+.menuIcon{
+    width: 40px;
+    margin-right: 1vw;
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }
+.toolbar{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    color: black;
+    z-index: 1;
+    box-sizing: border-box;
+}
+.headerbutton{
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+.headerbutton:hover{
+    background-color: black ;
+    color: white;
+}
+.body{
+    height: 96%;
+    width: 99vw;
+}
+.background{
+    margin: 0 auto ;
+    width: 75%;
+    height: 100%;
+    background-color: rgba(7, 7, 7, 0.801);
+    padding: 2% 0 0;
+}
+.headerGap{
+    display: block;
+    width: 100%;
+    height: 5vh;
+}
+.welcome{
+    padding: 50px 0;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+.heading{
+    color: rgb(100, 100, 224);
+}
+.Home{
+    background: url("../../assets/Img/HomeImg3.jpg") repeat fixed;
+    /* height: 200vh; */
+    width: 99vw;
+}
+.imagesClass{
+    width: 85%;
+    object-fit: contain;   
+    margin: 0 auto;
+}
+.CardContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+.card{
+    max-width: 400px;
+    margin: 20px 0;
+    background: none;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 2rem;
+    line-height: 1.5;
+    border: none;
+}
+.inButton{
+    padding: 50px 0;
+    margin: 50px 0;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    background-color: rgba(122, 155, 3, 0.747);
+}
+.inButton:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: rgba(122, 155, 3,0.900);
+    color: rgb(74, 74, 184);
+}
+.TrainerDiv{
+    width: 100%;
+    height: 300px;
+    margin : 30px auto;
+    background-color: rgb(67, 67, 230);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.TrainerDivBox{
+    color: white;
+    margin: auto 0;
+    font-size: 2rem;
+}
+.example-card {
+    max-width: 400px;
+    background-color:  rgb(67, 67, 230);
+    color: white;
+    text-align: center;
+    box-shadow: none;
+}
+.footer{
+    width: 100%;
+    background-color: rgb(8, 8, 8);
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+.cardDiv{
+    width: 100%;
+    font-size: 4rem;
+    padding: 70px 0;
+    margin: 100px 0;
+    background-color: rgba(72, 252, 192, 0.897);
+    color: white;
+    text-align: center;
+}
+.WebsiteDetail{
+    margin: auto 0;
+    text-align: center;
+    max-width: 30%;
+}
+.headingFooter{
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+.footerPara{
+    font-family: Georgia, serif;
+}
+.footerButton{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+.buttonContainer{
+    display: flex;
+}
+

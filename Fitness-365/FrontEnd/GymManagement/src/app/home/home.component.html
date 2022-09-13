@@ -1,0 +1,124 @@
+<div class="Home">
+  <header>
+    <mat-toolbar class="toolbar" color="pimary">
+      <img class="menuIcon" src="../../assets/Img/FitnessLogo.png">
+      <span>Fitness 365</span>
+      <span class="example-spacer"></span>
+      <button mat-stroked-button (click)="login()" class="headerbutton">Login</button>
+      <button mat-stroked-button class="headerbutton" (click)="RegisterUser()">Register</button>
+
+    </mat-toolbar>
+  </header>
+
+  <span class="headerGap"></span>
+
+  <div class="body">
+
+    <div class="background">
+      <div class="welcome">Welcome To <span class="heading"> FITNESS 365</span>
+      </div>
+      <div class="CardContainer">
+      <div class="card">
+        Exercise not only changes your body. It changes your mind, your attitude, and your mood.
+      </div>
+
+      <div class="card">
+        Time and health are two precious assets that we don't recognize and appreciate until they have been depleted.
+      </div>
+
+      <div class="card">
+        Eat Breakfast Like A King, Lunch Like A Prince And Dinner Like A Pauper.
+      </div>
+
+      <div class="card">
+        Every day is another chance to get stronger, to eat better, to live healthier, and to be the best version of you.
+      </div>
+
+      </div>
+
+    </div>
+
+    <div class="cardDiv">
+      Never Give Up
+    </div>
+    
+    <ngb-carousel class="imagesClass" *ngIf="images">
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper Home-Images">
+          <img class="HomeImages" [src]="images[0]" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>Dumbbell Rack</h3>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper Home-Images">
+          <img class="HomeImages" [src]="images[1]" alt="Random second slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>Cardio Area</h3>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper Home-Images">
+          <img class="HomeImages" [src]="images[3]" alt="Random third slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>Strength Area</h3>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+    
+  </div>
+  
+  <div class="TrainerDiv">
+    <div class="TrainerDivBox">
+      <mat-card class="example-card">
+        <mat-card-content>
+          <p style="font-size: 1.2rem;line-height: 1.2;">At Fitness 365, we believe real fitness is about more than getting on a treadmill and watching TV—it's about strengthening and conditioning your body and mind so you can get out there, explore the world, seek new adventures and be the person you were meant to be.  
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="TrainerDivBox">
+      <mat-card class="example-card">
+        <mat-card-content>
+          <p style="font-size: 1.2rem;line-height: 1.2;">Whether you’re new to fitness or an accomplished athlete, our coaches are highly trained and certified to help you set goals, teach proper form to prevent injury, and design training programs that include basic barbell exercises, olympic lifts, kettlebells, gymnastics, running, rowing, throwing, and a long list of bodyweight movements.
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="TrainerDivBox">
+      <mat-card class="example-card">
+        <mat-card-content>
+          <p style="font-size: 1.2rem;line-height: 1.2;">Here, you’ll never feel lost, alone or confused about what exercises to do or how to do them. That’s because your Fitness 365 membership includes a lot more than just a room full of equipment. Whether you’re looking for group classes or private training, we’ll take care of everything—just show up ready to move and let the transformation begin.
+            
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  
+  <div class="inButton" (click)="RegisterUser()">
+    Are You In?
+  </div>
+  
+  
+  <footer class="footer">
+    <div class="WebsiteDetail">
+      <h1 class="headingFooter">Fitenss 365</h1>
+      <p class="footerPara">Located in the Bhopal, Madhya Pradesh, our facility is a huge loft space with exposed brick, natural light and seasoned equipment from years of hard work—kinda like the Russian cabin where Rocky trained compared to the pristine lab of Ivan Drago. Except here, you are your only competition.</p>
+    </div>
+    <div class="WebsiteDetail">
+      <h1>Follow us on</h1>
+      <div class="buttonContainer">
+      <div><img class="footerButton" src="../../assets/Img/facebook.jpg" alt=""></div> 
+      <div><img class="footerButton" src="../../assets/Img/gmail.jpg" alt=""></div> 
+      <div><img class="footerButton" src="../../assets/Img/instagram.jpg" alt=""></div> 
+      <div><img class="footerButton" src="../../assets/Img/phone.jpg" alt=""></div> 
+      <div><img class="footerButton" src="../../assets/Img/whatsapp.jpg" alt=""></div> 
+      </div>
+    </div>
+  </footer>
+
+</div>

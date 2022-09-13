@@ -1,0 +1,13 @@
+.deleteButton {
+    background-color: rgb(243, 76, 76);
+    color: white;
+}
+.deleteContainer{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+.buttonGroup{
+    display: inline-block;
+    margin: 0 0 0 auto;
+}

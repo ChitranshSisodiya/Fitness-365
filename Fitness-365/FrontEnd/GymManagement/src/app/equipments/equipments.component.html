@@ -1,0 +1,19 @@
+<div class="Container">
+    <button mat-raised-button class="button" (click)="addEquipment()" color="primary"><mat-icon>add</mat-icon>Add Equipment</button>
+    <table class="table">
+        <tr>
+            <th *ngFor="let column of EquipmentColumn">{{column}}</th>
+            <th></th>
+        </tr>
+        <tr *ngFor="let row of equipment">
+            <td>{{row.equipmentId}}</td>
+            <td>{{row.equipmentName}}</td>
+            <td>{{row.equipmentDetail}}</td>
+            <td>{{row.quantity}}</td>
+            <td>{{row.equipmentType}}</td>
+            <td>{{row.equipmentImage}}</td>
+            <td><mat-icon id="Edit" class="Icon" (click)="openEditDialog(row)">create</mat-icon>
+                <mat-icon class="Icon" id="Delete" (click)="openDeleteDialog(row)">delete</mat-icon></td>
+        </tr>
+    </table>
+</div>

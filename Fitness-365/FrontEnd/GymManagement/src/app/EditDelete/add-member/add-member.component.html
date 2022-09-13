@@ -1,0 +1,68 @@
+<div class="EmployeeEdit">
+    <header class="header">
+        Add Member
+    </header>
+    <form class="form" [formGroup]="MemberForm">
+
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>Enter {{data.Columns[1]}}</mat-label>
+            <input matInput formControlName="memberName" id="memberName" required>
+        </mat-form-field>
+
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>Enter {{data.Columns[2]}}</mat-label>
+            <input matInput formControlName="memberImage" id="memberImage" required>
+        </mat-form-field>
+
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>Select {{data.Columns[3]}}</mat-label>
+            <mat-select [(value)]="membershipSelected">
+                <mat-option  *ngFor="let type of memberType" [value]="type">
+                    {{type}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <!-- membership start date -->
+        <mat-form-field appearance="fill">
+            <mat-label>Choose a date</mat-label>
+            <input matInput formControlName="membershipStartDate" [min]="minDate" [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field> 
+
+        
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>Select {{data.Columns[5]}}</mat-label>
+            <mat-select [(value)]="genderSelected">
+                <mat-option *ngFor="let type of Gender" [value]="type">
+                    {{type}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>Enter {{data.Columns[6]}}</mat-label>
+            <input matInput formControlName="address" id="address" required>
+        </mat-form-field>
+
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>Enter {{data.Columns[7]}}</mat-label>
+            <input matInput formControlName="phoneNo" id="phoneNo" required>
+        </mat-form-field>
+
+        <mat-form-field class="fields" hideRequiredMarker color="warning" appearance="fill">
+            <mat-label>Is {{data.Columns[8]}}</mat-label>
+            <mat-select [(value)]="activeSelected">
+                <mat-option *ngFor="let type of Active" [value]="type">
+                    {{type}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+    </form>
+
+    <button mat-raised-button class="formButton" (click)="save()" color="primary">Save</button>
+
+</div>

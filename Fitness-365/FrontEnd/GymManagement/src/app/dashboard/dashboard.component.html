@@ -1,0 +1,38 @@
+<div class="Dashboard">
+  <header class="header1">
+    <mat-toolbar>
+      <span>Dashboard</span>
+      <span class="example-spacer">
+        Fitness 365
+      </span>
+      <mat-icon class="adminImg1">admin_panel_settings</mat-icon>
+      <div class="adminName">Admin</div>
+    </mat-toolbar>
+  </header>
+  <div class="Midcontainer">
+    <div class="sidebar">
+      <ul>
+        <li>
+          <div (click)="EmployeeButton()"> Employees</div>
+        </li>
+        <li>
+          <div (click)="MemberButton()"> Members</div>
+        </li>
+        <li>
+          <div (click)="EquipmentButton()"> Equipments</div>
+        </li>
+      </ul>
+    </div>
+    <div class="TableContainer">
+      <div *ngIf="Employee">
+        <app-employees></app-employees>
+      </div>
+      <div *ngIf="Member">
+        <app-members></app-members>
+      </div>
+      <div *ngIf="Equipment">
+        <app-equipments></app-equipments>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+.login{
+    background: url("../../assets/Img/HomeBG.jpg") repeat;
+}
+.leftSpace{
+    width: 2%;
+    float: left;
+    font-size: 1rem;
+}
+.AppName{
+    margin: auto;
+    font-size: 1.5rem;
+}
+.LoginContainer{
+    height: 95vh;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+}
+.loginBox{
+    height: 16vw;
+    width: 40vw;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 25%;
+    min-width: 350px;
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2%;
+
+}
+.fields{
+    width: 100%;
+}
+.formButton{
+    margin: 0 0 0 auto;
+    margin-top: 5%;
+    position: relative;
+    
+    
+}

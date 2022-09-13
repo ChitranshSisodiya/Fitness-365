@@ -1,0 +1,21 @@
+<div class="Container">
+    <button mat-raised-button class="button" (click)="addMember()" color="primary"><mat-icon>add</mat-icon>Add Member</button>
+    <table class="table">
+        <tr>
+            <th *ngFor="let column of MemberColumn">{{column}}</th>
+            <th></th>
+        </tr>
+        <tr *ngFor="let row of members">
+            <td>{{row.memberId}}</td>
+            <td>{{row.memberName}}</td>
+            <td>{{row.memberImage}}</td>
+            <td>{{row.membershipType}}</td>
+            <td>{{row.membershipStartDate}}</td>
+            <td>{{row.gender}}</td>
+            <td>{{row.address}}</td>
+            <td>{{row.phoneNo}}</td>
+            <td>{{row.isActive}}</td>
+            <td><mat-icon id="Edit" class="Icon" (click)="openEditDialog(row)">create</mat-icon><mat-icon class="Icon" id="Delete" (click)="openDeleteDialog(row)">delete</mat-icon></td>
+        </tr>
+    </table>
+</div>
