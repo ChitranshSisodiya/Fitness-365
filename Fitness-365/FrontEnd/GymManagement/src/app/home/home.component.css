@@ -82,10 +82,9 @@
     color: white;
     background-color: rgba(122, 155, 3, 0.747);
 }
-.inButton:hover{
+.buttonPara:hover{
     text-decoration: underline;
     cursor: pointer;
-    background-color: rgba(122, 155, 3,0.900);
     color: rgb(74, 74, 184);
 }
 .TrainerDiv{
